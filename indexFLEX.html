@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Flex Layout</title>
+    <link rel="stylesheet" href="styleFLEX.css">
+</head>
+<body>
+<div class="container"></div>
+<header>
+    <h1>ink</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">feature</a></li>
+        <li><a href="#">pricing</a></li>
+        <li><a href="#">support</a></li>
+        <li class="nav-right">
+            <a href="#">About/</a>
+        </li>
+    </ul>
+</nav>
+<main class="flex">
+    <div class="colum-main title">
+        <h1> Some title</h1>
+        <p>some text</p>
+    </div>
+    <div class="colum-sidebar">
+        <div class="tile">
+            <form class="login-form">
+                <h3>login</h3>
+                <div>
+                    <label for="usernmane">username</label>
+                    <input type="text" name="username" id="usernmane">
+                </div>
+                <div>
+                    <label for="password">password</label>
+                    <input type="password" name="password" id="password">
+
+                </div>
+            </form>
+        </div>
+        <div class="tile centered">
+            <small>Starting up</small>
+            <div class="cost">
+                <span class="cost-currency">$</span>
+                <span class="cost-dollar">20</span>
+                <span class="cost-cents">20</span>
+            </div>
+        </div>
+        <a href="#" class="cta-botton">Singup</a>
+    </div>
+</main>
+
+</body>
+</html>

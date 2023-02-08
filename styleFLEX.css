@@ -1,0 +1,48 @@
+/*
+initial setting
+ */
+:root{
+    box-sizing: border-box;
+}
+*,
+::before,
+::after{
+    box-sizing: inherit;
+}
+body * + * {
+    margin-top: 1.5em;
+}
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+/*
+CSS SETTING
+ */
+body{
+    background-color: rosybrown;
+    font-family: "Academy Engraved LET",sans-serif;
+}
+/*
+NAV SECTION
+ */
+.site-nav{
+    display: flex;
+    padding: .5em;
+    list-style-type: none;
+    background-color: violet;
+    border-radius: .2em;
+}
+ul.site-nav > li{
+    margin-top: 0;
+}
+ul.site-nav > li >a{
+    display: block;
+    padding: .5em 1em;
+    background-color: darkviolet;
+    color: white;
+    text-decoration: none;
+}
+ul.site-nav > li > a:hover{
+    background-color: lightsalmon;
+}

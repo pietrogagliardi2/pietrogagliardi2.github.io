@@ -5,7 +5,7 @@
 *,
 ::after,
 ::before {
-    box-sizing: inherit;
+    box-sizing:inherit;
 }
 body * + *{
     margin-top: 1.5em;
@@ -31,7 +31,7 @@ footer{
 main{
 
     background-color: #ffffff;
-    padding: 0 1.5em 1.5em 1.5em;
+    padding:  0 1.5em 1.5em 1.5em;
 }
 header,
 main,
@@ -59,7 +59,7 @@ container pattern*/
 section::after{
     display: block;
     clear: both;
-    contain: "";
+    contain: " ";
 }
 main section div article:first-child{
     margin-top: 1.5 em;
@@ -72,13 +72,42 @@ main section div article{
 }
 .article{
     background-color: burlywood;
-    padding: 0 1.5em 1.5em 1.5em;
+    padding: 1.5em;
 
 }
 /*
 section margin collapsing problem
  */
-section *:first-child{
+section > *:first-child{
     margin-top: 1.5em;
     background-color: burlywood;
+}
+section > * :first-child{
+    margin-top: 1.5em;
+}
+section:before{
+    display:table;
+    contain: " ";
+}
+section div article:nth-child(2n+1){
+    clear:left;
+}
+/*
+internal article
+ */
+section div article img{
+    float: left;
+    margin-right: 1.5em;
+    margin-bottom: 1em;
+}
+section div article p {
+    overflow: auto;
+    text-align: justify;
+}
+/*
+fix margin collaping problem
+ */
+sectione::before{
+    contain: " ";
+    display: table;
 }
