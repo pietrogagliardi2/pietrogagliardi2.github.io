@@ -1,0 +1,149 @@
+/*
+initial setting
+ */
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body * + * {
+    margin-top: 1.5em;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/*
+CSS SETTING
+ */
+body {
+    background-color: #fff000;
+    font-family: "Academy Engraved LET", sans-serif;
+}
+
+/*
+NAV SECTION
+ */
+ul.site-nav {
+    display: flex;
+    padding: .5em;
+    list-style-type: none;
+    background-color: red;
+    border-radius: .2em;
+}
+
+ul.site-nav > li {
+    margin-top: 0;
+}
+
+ul.site-nav > li > a {
+    display: block;
+    padding: 0.5em 1em;
+    background-color: darkviolet;
+    color: white;
+    text-decoration: none;
+}
+
+ul.site-nav > li > a:hover {
+    background-color: lightsalmon;
+}
+
+ul.site-nav > li > li {
+    margin-left: 1.5em;
+}
+
+ul.site-nav > .nav-right {
+    margin-left: auto;
+}
+
+/*
+main
+ */
+main {
+    display: flex;
+}
+/*
+flex item
+ */
+main > * + * {
+    margin-top: 0;
+    margin-left: 1.5em;
+}
+
+.tile {
+    background-color: white;
+    padding: 1.5em;
+}
+
+.tile :first-child {
+    margin-top: 0;
+}
+.colum-main{
+    flex: 3;
+}
+.colum-sidebar{
+    flex: 1;
+}
+.colum-sidebar{
+    display: flex;
+    flex-direction: column;
+}
+.colum-sidebar > title{
+    flex: 1;
+}
+.login-form h3 {
+    margin: 0;
+    font-size: .9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: right;
+
+}
+.login-form label{
+    text-align: left;
+    font-weight: bold;
+    display: block;
+}
+
+
+.login-form input[type="text"],.login-form input[type="password"]  {
+    display: block;
+    width: 100%;
+margin-top: 0;
+    border: 1px solid coral;
+    padding: .5em 1em;
+}
+
+.centered{
+    text-align: center;
+}
+
+.cost{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    line-height: .7em;
+}
+.cost > span{
+    margin-top: 0;
+
+
+}
+.cost-currency{
+    font-size: 2em;
+}
+.cost-dollar{
+    font-size: 4em;
+}
+.cost-cents{
+    font-size: 1.5em;
+    align-self: flex-start;
+}
+
