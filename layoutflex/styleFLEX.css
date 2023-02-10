@@ -24,7 +24,7 @@ body * + * {
 CSS SETTING
  */
 body {
-    background-color: #fff000;
+    background-color: rosybrown;
     font-family: "Academy Engraved LET", sans-serif;
 }
 
@@ -69,6 +69,7 @@ main
 main {
     display: flex;
 }
+
 /*
 flex item
  */
@@ -85,19 +86,24 @@ main > * + * {
 .tile :first-child {
     margin-top: 0;
 }
-.colum-main{
+
+.colum-main {
     flex: 3;
 }
-.colum-sidebar{
+
+.colum-sidebar {
     flex: 1;
 }
-.colum-sidebar{
+
+.colum-sidebar {
     display: flex;
     flex-direction: column;
 }
-.colum-sidebar > title{
+
+.colum-sidebar > title {
     flex: 1;
 }
+
 .login-form h3 {
     margin: 0;
     font-size: .9em;
@@ -106,44 +112,69 @@ main > * + * {
     text-align: right;
 
 }
-.login-form label{
+
+.login-form label {
     text-align: left;
     font-weight: bold;
     display: block;
 }
 
 
-.login-form input[type="text"],.login-form input[type="password"]  {
+.login-form input[type="text"], .login-form input[type="password"] {
     display: block;
     width: 100%;
-margin-top: 0;
+    margin-top: 0;
     border: 1px solid coral;
     padding: .5em 1em;
 }
 
-.centered{
+.login-form input[type="button"]{
+    display: block;
+    border: 1px solid coral;
+    padding: .5em 1em;
+    background-color: white;
+}
+
+.centered {
     text-align: center;
 }
 
-.cost{
+.cost {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items:center;
-    line-height: .7em;
+    align-items: center;
 }
-.cost > span{
+
+.cost > span {
     margin-top: 0;
-
-
+    display: block;
+     line-height: .7;
 }
-.cost-currency{
+
+.cost-currency {
     font-size: 2em;
 }
-.cost-dollar{
+
+.cost-dollar {
     font-size: 4em;
 }
-.cost-cents{
+
+.cost-cents {
     font-size: 1.5em;
     align-self: flex-start;
+
 }
 
+.special-offer{
+    display: flex;
+    flex-direction: column;
+}
+a.cta-button{
+    display: block;
+    width: 100%;
+    margin-top: auto;
+    text-decoration: none;
+    padding: .5em 1em;
+    background-color: coral;
+}
