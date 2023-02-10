@@ -90,7 +90,9 @@ main > * + * {
 .colum-main {
     flex: 3;
 }
-
+/*
+sidebar setting
+ */
 .colum-sidebar {
     flex: 1;
 }
@@ -103,7 +105,9 @@ main > * + * {
 .colum-sidebar > title {
     flex: 1;
 }
-
+/*
+form  setting
+ */
 .login-form h3 {
     margin: 0;
     font-size: .9em;
@@ -138,7 +142,9 @@ main > * + * {
 .centered {
     text-align: center;
 }
-
+/*
+cost setting
+ */
 .cost {
     display: flex;
     flex-direction: row;

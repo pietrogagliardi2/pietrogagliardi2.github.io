@@ -1,0 +1,31 @@
+/*
+GENERIC RULE
+ */
+:root{
+    box-sizing: border-box;
+}
+*,
+::after,
+::before{
+    box-sizing: inherit;
+}
+body{
+    background-color: coral;
+    font-family: "Apple Braille",sans-serif;
+}
+.container{
+    max-width: 1080px;
+    margin: 0  auto;
+}
+/*
+GRID
+ */
+.container{
+    display: grid;
+    grid-template-columns:  2fr 1fr;
+    grid-template-rows:repeat(4,auto);
+    grid-gap: 1.5em;
+}
+header,nav{
+grid-column:1/3;
+}
