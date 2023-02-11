@@ -1,0 +1,108 @@
+/*
+initial session
+ */
+:root{
+    box-sizing: border-box;
+}
+*,
+::after,
+::before{
+    box-sizing: border-box;
+}
+body * + *{
+    margin-top: 1.5em;
+}
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+/*
+flex setting
+ */
+.container{
+    background-color: rosybrown;
+    font-family: "Academy Engraved LET", sans-serif;
+}
+header{
+    background-color: burlywood;
+    margin-top: 0;
+
+}
+ul.site-nav{
+    display: flex;
+    padding: .5em;
+    list-style-type:none;
+    background-color: violet;
+    border-radius: .8em;
+
+}
+ul.site-nav > li{
+    margin-top: 0;
+}
+.site-nav >li > a{
+    display: block;
+    padding: .8em 1em;
+    background-color: burlywood;
+    color: white;
+    text-decoration: none ;
+}
+
+main{
+    display: block;
+
+}
+main > * + * {
+    margin-top: 0;
+    margin-left: 1.5em;}
+.tile{
+    background-color: white;
+    padding: 1.5em;
+}
+.tile :first-child{
+    margin-top: 0;
+}
+.site-sidebar-top{
+    display: block;
+}
+/*
+form setting
+ */
+.login-form label{
+    text-align: left;
+    font-weight: bold;
+    display: block;
+}
+.centered{
+    text-align: center;
+}
+/*
+cost setting
+ */
+.cost{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.cost > span{
+    margin-top: 0;
+    display: block;
+    line-height: .7;
+}
+.cost-currency{
+    font-size: 2em;
+}
+.cost-dollar{
+    font-size: 4em;
+}
+.cost-cents{
+    font-size: 1.5em;
+}
+a.cta-button{
+    display: block;
+    width: 100%;
+    margin-top: auto;
+    text-decoration: none;
+    padding: .5em 1em;
+    background-color: chocolate;
+}
