@@ -24,8 +24,8 @@ GRID
     display: grid;
     grid-template-areas:"header header"
                         "nav nav"
-                        "main siderbar1"
-                        "main siderbar2";
+                        "main sidebar1"
+                        "main sidebar2";
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: .5em;
@@ -46,12 +46,12 @@ GRID
     background-color: blueviolet;
 }
 .d{
-    grid-column:  siderbar1;
-    grid-row: siderbar1;
+    grid-column:  sidebar1;
+    grid-row: sidebar1;
     background-color: rosybrown;
 }
 .e{
-    grid-column: siderbar2;
-    grid-row: siderbar2;
+    grid-column: sidebar2;
+    grid-row: sidebar2;
     background-color: burlywood;
 }
