@@ -1,0 +1,57 @@
+body {
+    font-family: "Apple Braille", sans-serif;
+
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+.container > * {
+    background-color: crimson;
+    border-radius: 1.5em;
+    display: flex;
+    padding: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+GRID
+ */
+.container {
+    display: grid;
+    grid-template-areas:"header header"
+                        "nav nav"
+                        "main siderbar1"
+                        "main siderbar2";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: .5em;
+}
+.a{
+    grid-column: main;
+    grid-row: main;
+    background-color: chocolate;
+}
+.b{
+    grid-column: header;
+    grid-row: header;
+    background-color: blue;
+}
+.c{
+    grid-column: nav;
+    grid-row: nav;
+    background-color: blueviolet;
+}
+.d{
+    grid-column:  siderbar1;
+    grid-row: siderbar1;
+    background-color: rosybrown;
+}
+.e{
+    grid-column: siderbar2;
+    grid-row: siderbar2;
+    background-color: burlywood;
+}
