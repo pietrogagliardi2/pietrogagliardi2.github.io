@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MediaQuery-0</title>
   <style>
     .title > h1 {
@@ -9,6 +10,14 @@
       font-size: 2.5rem;
       margin: .2em 0;
       color: red;
+    }
+    article{
+      background-color: antiquewhite;
+    }
+    @media screen and (min-width: 320px){
+      div.title > h1{
+        color: yellow;s
+      }
     }
   </style>
 </head>
